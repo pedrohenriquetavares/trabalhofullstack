@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #02010c, #8f06c5);
+    color: #333;
+}
+
+.container {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 0px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #6a1b9a;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 0 5px;
+    color: #f5f1f1;
+}
+
+.tab-button:hover {
+    background-color: #ced40e;
+}
+
+.tab-button.active {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #d6e1e5;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.formField {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #6a1b9a;
+    box-shadow: 0 0 0 3px rgba(106, 27, 154, 0.3);
+}
+
+button[type="submit"], button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #4a0072;
+}
+
+#cancelBtn {
+    background-color: #6a1b9a;
+}
+
+#cancelBtn:hover {
+    background-color: #6a1b9a;
+}
+
+.message {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: none;
+}
+
+.success-message {
+    background-color: #e8f5e9;
+    color: #6a1b9a;
+    border-left: 6px solid #6a1b9a;
+}
+
+.error-message {
+    background-color: #fdecea;
+    color: #6a1b9a;
+    border-left: 6px solid #6a1b9a;
+}
+
+.tab-content .message {
+    margin-top: 15px;
+}
+
+#updateForm {
+    margin-bottom: 15px;
+}
